@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+body {
+    background: url(img/last.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1, h2{ font-family: Papyrus, fantasy; font-size: 50px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; text-align: center; margin-top: 5rem; color: yellowgreen;}
+
+h5 {
+    font-family: Papyrus, fantasy;
+    text-align: center;
+    margin-top: 2rem;
+    color: yellowgreen;
+}
+
+button {
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background: khaki;
+    outline: none;
+    font-family: Papyrus, fantasy;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+
+#forbutton {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.container-bender {
+    width: 75%;
+    margin: 5rem auto;
+   
+}
+
+.elements-container img {
+
+    margin: 25px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.elements-container img:hover {
+    box-shadow: 0px 10px 50px rgba(158, 151, 71, 1);
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
+
+.imageOfChar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
